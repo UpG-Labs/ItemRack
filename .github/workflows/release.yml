@@ -17,16 +17,4 @@ jobs:
 
       - uses: BigWigsMods/packager@master
         with:
-          args: -g classic -n "{package-name}-classic-{project-version}" -p 340903
-
-      - uses: BigWigsMods/packager@master
-        with:
-          args: -g bcc -n "{package-name}-bcc-{project-version}" -p 340903
-
-      - uses: BigWigsMods/packager@master
-        with:
-          args: -g wrath -n "{package-name}-wrath-{project-version}" -p 340903
-
-      - uses: BigWigsMods/packager@master
-        with:
-          args: -g cata -n "{package-name}-cata-{project-version}" -p 340903
+          args: -g classic -n "{package-name}-classic-{project-version}" -p 1031471
