@@ -1,4 +1,11 @@
-__ New in 4.00 - By Rottenbeer  __
+__ New in 4.01 - By romracer __
+* Fix Season of Discovery rune matching
+* Fix item matching for gear set tooltips
+* Fix empty strings on rune suffixes
+* Fix GetName error on mouseover frames
+* Populate KnownItems
+
+__ New in 4.00 - By Rottenbeer __
 * Add Cata CI release
 
 __ New in 3.78 - By Roadblock __
