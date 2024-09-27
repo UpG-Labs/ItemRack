@@ -1305,10 +1305,16 @@ function ItemRack.WriteMenuCooldowns()
 end
 
 function ItemRack.MenuMouseover()
-	local frame = GetMouseFocus()
+	local frame = nil
 	local frameName = nil
 	local frameVisible = nil
 	local IRmouseOverFrame = nil
+	if GetMouseFocus then
+		frame = GetMouseFocus()
+	elseif GetMouseFoci then
+		local mouseFoci = GetMouseFoci()
+		frame = mouseFoci[1] or nil
+	end
 	if frame then frameName = frame:GetName() end
 	if frame then frameVisible = frame:IsVisible() end
 	if frameName then IRmouseOverFrame = ItemRack.MenuMouseoverFrames[frameName] end
